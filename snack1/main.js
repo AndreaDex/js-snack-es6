@@ -28,31 +28,30 @@ var bicycles = [
         peso : 20,
     },
 ]
-var listaPesi = [];
+/* 
+function getMinPeso() {
+    return bicycles.reduce((min, p) => p.peso < min ? p.peso : min, bicycles[0].peso);
+  }
+  console.log(getMinPeso()); */
+
+  // todo Verificare il peso minore tra le bici con ciclo 
+/*  var biciLeggera = bicycles[0];
+
 for (let index = 0; index < bicycles.length; index++) {
     const object = bicycles[index];
-    listaPesi.push(object.peso);
-}
+    
+    if(object.peso < biciLeggera.peso){
+        biciLeggera = object[index]
+    }
+    
+} */
 
-listaPesi.sort(function(a,b){
-    return a - b;
-  })
 
-console.log(listaPesi);
-
-/* numbers.sort(function(a, b) {
-    return a - b;
-  }); */
-/*  const [,,,lightweight] = bicycles;
+ const [,,,lightweight] = bicycles;
  console.log(lightweight);
 
  var divEl = document.getElementById("stampa");
  divEl.innerHTML = 
  `<h2>La bici più leggera è :</h2>
  <h3>${lightweight.nome}</h3>
- ` */
-
- /* function getMinPeso() {
-    return bicycles.reduce((min, p) => p.peso < min ? p.peso : min, bicycles[0].y);
-  }
-  console.log(getMinPeso()); */
+ ` 
