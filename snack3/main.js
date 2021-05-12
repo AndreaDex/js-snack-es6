@@ -1,7 +1,8 @@
 /* Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
 La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri. */
 
-let x =prompt("inserisci un numero");
+let x =parseInt(prompt("inserisci un numero")) +1 ;
+console.log(x);
 let y = prompt("inserisci un altro numero maggiore del primo")
 
 const fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610];
@@ -36,22 +37,31 @@ console.log(prova);  */
 
 
 function filtraggio(array, min, max) {
-
+    
     if(min < max){
        
-        return array.filter((singolo, indice) => indice >= min && indice <= max )
-
-    }else if (min > max){
+        return array.filter((singolo, indice) => indice >= min - 1 && indice <= max + 1)
+    
+    } else if(min > max){
         
         alert("Il primo numero deve essere inferiore al secondo")
     }
 }
 
+   
+
 /* let prova2 = filtraggio(fibonacci, 2, 5)
 console.log(prova2) */
 
+// ! ORIGINALE
+/* if(min < max){
+       
+    return array.filter((singolo, indice) => indice >= min  && indice <= max )
 
-
+}else if (min > max){
+    
+    alert("Il primo numero deve essere inferiore al secondo")
+} */
 
 /* 
  * Funzione
@@ -82,7 +92,8 @@ console.log(taglio); */
 /* 
  * FILTER
 */
-/* var cut = fibonacci.filter((singolo, indice) => {
+/* 4
+ var cut = fibonacci.filter((singolo, indice) => {
     return indice >= 2 && indice <= 5
 })
-console.log(cut); */
+console.log(cut);  */
