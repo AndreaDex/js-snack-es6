@@ -52,10 +52,3 @@ const {nome} = biciLeggera ;
  `<h2>La bici più leggera è :</h2>
  <h3>${nome}</h3>
  ` ;
-
-
- /* 
-function getMinPeso() {
-    return bicycles.reduce((min, p) => p.peso < min ? p.peso : min, bicycles[0].peso);
-  }
-  console.log(getMinPeso()); */
