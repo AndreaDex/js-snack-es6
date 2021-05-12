@@ -17,6 +17,81 @@ showCaseEl.insertAdjacentHTML("beforeend", `
 
 `)
     
+
+
+function filtraggio(array, min, max) {
+    
+    if(min < max){
+        
+        return array.filter((singolo, indice) => {
+          console.log(max + 1);
+          return  indice >= (min -1)  && indice <= (max + 1)
+        })
+        
+    } else if(min > max){
+        
+        alert("Il primo numero deve essere inferiore al secondo")
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* let prova2 = filtraggio(fibonacci, 2, 5)
+console.log(prova2) */
+
+// ! ORIGINALE
+/* if(min < max){
+    
+    return array.filter((singolo, indice) => indice >= min  && indice <= max )
+    
+}else if (min > max){
+    
+    alert("Il primo numero deve essere inferiore al secondo")
+} */
+
+/* 
+* Funzione
+*/
+/* function slice(array, min, max) {
+    
+    if (min < max) {
+        return array.slice(min, max+1)
+    }
+    
+}
+console.log(slice(fibonacci, 0, 5)); */
+
+/* 
+* FOREACH 
+*/
+/* let taglio = [];
+fibonacci.forEach(function (singolo, indice, array, min, max) {
+    //console.log(singolo, indice); 
+    if (indice >= 2 && indice <= 5){
+        //console.log(indice);
+        taglio.push(singolo)
+    }
+    
+})
+console.log(taglio); */
+
+/* 
+* FILTER
+*/
+/* 4
+var cut = fibonacci.filter((singolo, indice) => {
+    return indice >= 2 && indice <= 5
+})
+console.log(cut);  */
+
 /* function perOgnuno(array, min, max){
     let risultato = [];
 
@@ -34,69 +109,3 @@ showCaseEl.insertAdjacentHTML("beforeend", `
 /* 
  let prova = perOgnuno(fibonacci, 2, 5) ;
 console.log(prova);  */
-
-
-function filtraggio(array, min, max) {
-    
-    if(min < max){
-       
-        return array.filter((singolo, indice) => {
-          console.log(max + 1);
-          return  indice >= (min -1)  && indice <= (max + 1)
-        })
-    
-    } else if(min > max){
-        
-        alert("Il primo numero deve essere inferiore al secondo")
-    }
-}
-
-   
-
-/* let prova2 = filtraggio(fibonacci, 2, 5)
-console.log(prova2) */
-
-// ! ORIGINALE
-/* if(min < max){
-       
-    return array.filter((singolo, indice) => indice >= min  && indice <= max )
-
-}else if (min > max){
-    
-    alert("Il primo numero deve essere inferiore al secondo")
-} */
-
-/* 
- * Funzione
-*/
-/* function slice(array, min, max) {
-
-    if (min < max) {
-        return array.slice(min, max+1)
-    }
-      
-}
-console.log(slice(fibonacci, 0, 5)); */
-
-/* 
- * FOREACH 
-*/
-/* let taglio = [];
-fibonacci.forEach(function (singolo, indice, array, min, max) {
-    //console.log(singolo, indice); 
-    if (indice >= 2 && indice <= 5){
-        //console.log(indice);
-        taglio.push(singolo)
-    }
-
-})
-console.log(taglio); */
-
-/* 
- * FILTER
-*/
-/* 4
- var cut = fibonacci.filter((singolo, indice) => {
-    return indice >= 2 && indice <= 5
-})
-console.log(cut);  */
